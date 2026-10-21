@@ -32,131 +32,81 @@
             <h1>My Family</h1>
             <p>3 members • 1 Alert</p>
           </div>
-          <button class="nav-icon" aria-label="Search"><img src="assets/help.svg" width="26.67" height="26.67" alt=""></button>
+          <button class="nav-icon" aria-label="More"><img class="rot90" src="assets/more.svg" width="20" height="3.334" alt=""></button>
         </header>
-
-        <!-- Top Nav Units (members) -->
-        <nav class="unit-strip" aria-label="Family members">
-          <button class="unit is-active">
-            <span class="unit-icon"><span class="avatar-ph">Y</span><span class="crown">★</span></span>
-            <span class="unit-label">You</span>
-          </button>
-          <button class="unit">
-            <span class="unit-icon"><span class="avatar-ph">R</span></span>
-            <span class="unit-label">Riya</span>
-          </button>
-          <button class="unit">
-            <span class="unit-icon"><span class="avatar-ph">A</span><span class="alert-dot"></span></span>
-            <span class="unit-label">Aarav</span>
-          </button>
-          <button class="unit">
-            <span class="unit-icon"><span class="add-ph">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#292c31" stroke-width="1.6" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
-            </span></span>
-            <span class="unit-label">Add</span>
-          </button>
-        </nav>
-
-        <!-- Snapshot ✅ -->
-        <section class="snapshot">
-          <div class="status-msg"><span class="notifier"></span>Family protected</div>
-          <div class="illustration-ph" aria-label="Family illustration placeholder"></div>
-          <div class="snapshot-text">
-            <h2>One family. More together.</h2>
-            <p class="sub-strong">3 members • 4 connections</p>
-            <p class="sub">Plans, usage and safety — all in one place</p>
-          </div>
-        </section>
 
         <div class="layout">
 
-          <!-- Actions (Icon-action ✅) -->
-          <section class="actions">
-            <a class="icon-action is-highlighted" href="#">
-              <span class="ia-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#292c31" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 19.5c.6-3.3 3.3-5.5 6.5-5.5 1.4 0 2.6.4 3.6 1.1"/><path d="M18 14v6M15 17h6"/></svg></span>
-              <span class="ia-label">Add<br>member</span>
-            </a>
-            <a class="icon-action" href="#">
-              <span class="ia-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#292c31" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a13 13 0 0 1 18 0"/><path d="M6.5 12.5a8 8 0 0 1 11 0"/><path d="M10 16a3 3 0 0 1 4 0"/><circle cx="12" cy="19" r=".8" fill="#292c31"/></svg></span>
-              <span class="ia-label">Add<br>connection</span>
-            </a>
-            <a class="icon-action" href="#">
-              <span class="ia-circle"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#292c31" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
-              <span class="ia-label">Airtel<br>Safe</span>
-            </a>
-            <a class="icon-action" href="#">
-              <span class="ia-circle"><img src="assets/more.svg" width="20" height="3.334" alt=""></span>
-              <span class="ia-label">View more<br>actions</span>
-            </a>
+          <!-- Members: Top Nav Unit tiles -->
+          <section class="members">
+            <button class="member is-active">
+              <span class="m-avatar"><span class="avatar-ph"></span><span class="crown">★</span></span>
+              <span class="m-name">You</span>
+              <span class="m-tag">Primary</span>
+            </button>
+            <button class="member">
+              <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e40000" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+              <span class="m-name">Add<br>Member</span>
+            </button>
+            <button class="member">
+              <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#075ee8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a13 13 0 0 1 18 0"/><path d="M6.5 12.5a8 8 0 0 1 11 0"/><path d="M10 16a3 3 0 0 1 4 0"/><circle cx="12" cy="19" r=".8" fill="#075ee8"/></svg></span>
+              <span class="m-name">Add<br>Connection</span>
+            </button>
           </section>
 
-          <!-- Hero Card ✅ -->
-          <section class="hero-card">
-            <div class="hero-heading"><span class="big">3</span><span class="unit-text">members protected</span></div>
-            <div class="progress">
-              <p class="progress-label">Spam calls blocked this month</p>
-              <div class="track"><div class="fill" style="width:82%"></div></div>
-              <div class="hints"><span>Airtel Safe is on for everyone</span><span>128 of 156</span></div>
-            </div>
-            <div class="details">
-              <span class="detail"><img src="assets/call.svg" width="20" height="20" alt="">128 spam calls</span>
-              <span class="detail"><img src="assets/sms.svg" width="20" height="20" alt="">12 fraud links</span>
+          <!-- Ingress Card ✅ (hero) -->
+          <section class="card hero">
+            <div class="hero-top">
+              <div class="hero-text">
+                <h2>One family.<br>More together.</h2>
+                <p>Add your loved ones to manage their connections, plans and safety — all in one place.</p>
+              </div>
+              <div class="illustration-ph" aria-label="Family illustration placeholder"></div>
             </div>
             <a class="btn-primary" href="#">Add family member</a>
-            <a class="link" href="#">View safety report</a>
           </section>
 
-          <!-- Product Showcase ✅ -->
-          <section class="showcase">
-            <div class="section-title"><h3>Family benefits</h3><a class="link" href="#">View All</a></div>
-            <div class="tiles">
-              <article class="tile">
-                <div class="logo-ph"></div>
-                <div class="tile-text"><h4>Exclusive offers</h4><p>Special deals for your family</p></div>
-                <a class="link with-arrow" href="#">Explore <img src="assets/arrow-right.svg" width="16.67" height="16.67" alt=""></a>
-              </article>
-              <article class="tile">
-                <div class="logo-ph"></div>
-                <div class="tile-text"><h4>Connections</h4><p>Easily handle plans and usage</p></div>
-                <a class="link with-arrow" href="#">Manage <img src="assets/arrow-right.svg" width="16.67" height="16.67" alt=""></a>
-              </article>
-              <article class="tile">
-                <div class="logo-ph"></div>
-                <div class="tile-text"><h4>Safer together</h4><p>Spam call protection for everyone</p></div>
-                <a class="link with-arrow" href="#">Turn on <img src="assets/arrow-right.svg" width="16.67" height="16.67" alt=""></a>
-              </article>
-            </div>
-          </section>
-
-          <!-- Ingress Card ✅ -->
-          <section>
-            <div class="section-title"><h3>Insights</h3></div>
-            <article class="ingress">
-              <div class="ingress-text">
-                <h4>Personalized Report</h4>
-                <p>See your family’s safety report and usage insights</p>
-                <a class="btn-secondary" href="#">View report</a>
-              </div>
-              <div class="ingress-ph"></div>
-            </article>
-          </section>
+          <!-- Ingress Card ✅ (status) -->
+          <a class="card row-card" href="#">
+            <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f7033" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+            <span class="row-text">
+              <span class="status-msg"><span class="notifier"></span>Protected</span>
+              <strong>Your family is protected</strong>
+              <small>Spam calls, fraud links and more are blocked with Airtel Safe.</small>
+            </span>
+            <img src="assets/chevron-right.svg" width="16.67" height="16.67" alt="">
+          </a>
 
           <!-- List_Refresh ✅ -->
-          <section class="list-block">
-            <div class="section-title"><h3>Family help</h3></div>
-            <div class="list-card">
-              <div class="list-rows">
-                <a class="row" href="#">How do I add a family member?<img src="assets/chevron-right.svg" width="16.67" height="16.67" alt=""></a>
-                <hr>
-                <a class="row" href="#">Share data with my family<img src="assets/chevron-right.svg" width="16.67" height="16.67" alt=""></a>
-                <hr>
-                <a class="row" href="#">Manage permissions for a member<img src="assets/chevron-right.svg" width="16.67" height="16.67" alt=""></a>
-                <hr>
-                <a class="row" href="#">Remove a member<img src="assets/chevron-right.svg" width="16.67" height="16.67" alt=""></a>
-              </div>
-              <div class="bottom-strip"><span>Need help with something else?</span><a class="link" href="#">Chat Now</a></div>
+          <section>
+            <div class="section-title"><h3>Family benefits</h3><a class="link" href="#">See all</a></div>
+            <div class="card list-card">
+              <a class="row" href="#">
+                <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e40000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="8" width="17" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12M12 8S10.5 4 8 4.5 8.5 8 12 8Zm0 0s1.5-4 4-3.5S15.5 8 12 8Z"/></svg></span>
+                <span class="row-text"><strong>Exclusive offers</strong><small>Special deals for your family</small></span>
+                <img src="assets/chevron-right.svg" width="16.67" height="16.67" alt="">
+              </a>
+              <hr>
+              <a class="row" href="#">
+                <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0f7033" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg></span>
+                <span class="row-text"><strong>Manage all connections</strong><small>Easily handle plans and usage</small></span>
+                <img src="assets/chevron-right.svg" width="16.67" height="16.67" alt="">
+              </a>
+              <hr>
+              <a class="row" href="#">
+                <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#075ee8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6L12 3Z"/></svg></span>
+                <span class="row-text"><strong>Stay safer together</strong><small>Spam call protection for everyone</small></span>
+                <img src="assets/chevron-right.svg" width="16.67" height="16.67" alt="">
+              </a>
             </div>
           </section>
+
+          <!-- Ingress Card ✅ (report) -->
+          <a class="card row-card" href="#">
+            <span class="ia-circle sm"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#e40000" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v5.5c0 4.4 3.1 8.2 7.5 9.5 4.4-1.3 7.5-5.1 7.5-9.5V6L12 3Z"/><path d="M12 8v4.5M12 15.5v.01"/></svg></span>
+            <span class="row-text"><strong>Personalized Report</strong><small>See your family’s safety report and usage insights.</small></span>
+            <img src="assets/chevron-right.svg" width="16.67" height="16.67" alt="">
+          </a>
 
         </div>
       </main>
