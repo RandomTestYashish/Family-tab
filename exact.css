@@ -1,0 +1,66 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  background: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: "liga" 0;
+  -webkit-font-smoothing: antialiased;
+}
+button { background: none; border: 0; cursor: pointer; }
+
+/* ---------- Device: 375 x 812 preview ---------- */
+.device {
+  min-height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  padding: 24px 0;
+}
+.screen {
+  position: relative;
+  width: 375px; height: 812px;
+  background: #fff;
+  border-radius: 44px;
+  overflow: hidden;
+  box-shadow: 0 0 0 10px #111, 0 30px 60px rgba(0, 0, 0, .25);
+  display: flex; flex-direction: column;
+}
+@media (max-width: 500px) {
+  .device { padding: 0; display: block; }
+  .screen { width: 100%; height: 100vh; height: 100dvh; border-radius: 0; box-shadow: none; }
+}
+
+/* ---------- Status-Bar 1.0/App ---------- */
+.status-bar { position: relative; flex: none; height: 44px; background: #fff; }
+.status-bar img { position: absolute; display: block; }
+.sb-time { left: 25.21px; top: 16.08px; }
+.sb-cell { right: 70px; top: 17px; }
+.sb-wifi { right: 49.67px; top: 16px; }
+.sb-batt { right: 20.33px; top: 16px; }
+
+.scroll { flex: 1; overflow-y: auto; overflow-x: hidden; scrollbar-width: none; }
+.scroll::-webkit-scrollbar { display: none; }
+
+/* ---------- Frame 01 (375 x 1138, minus 44px status bar) ---------- */
+.frame-01 { position: relative; width: 375px; height: 1094px; margin: 0 auto; overflow: hidden; background: #fff; }
+
+.top-nav {
+  position: absolute; left: 0; top: 0;
+  width: 375px; height: 69px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 20px;
+  background: #fff;
+  z-index: 1;
+}
+.nav-btn { width: 40px; height: 40px; display: grid; place-items: center; }
+.nav-title { position: absolute; left: 50%; top: 15px; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.nav-title h1 { font-size: 16px; line-height: 18px; font-weight: 700; color: #000; }
+.nav-title p { margin-top: 1px; font-size: 14px; line-height: 20px; color: #8e9aa9; }
+
+/* Mockup crops: positions and crop offsets taken from Figma */
+.mock { position: absolute; left: 0; width: 375px; overflow: hidden; }
+.mock img { position: absolute; display: block; max-width: none; }
+.mock-1 { top: 66.63px;  height: 159.965px; }
+.mock-1 img { width: 307.6%;  height: 658.99%; left: -49.74%; top: -89.84%; }
+.mock-2 { top: 227.6px;  height: 264.322px; }
+.mock-2 img { width: 208.91%; height: 559.34%; left: -2.55%;  top: -138.24%; }
+.mock-3 { top: 491.92px; height: 776.075px; }
+.mock-3 img { width: 207.24%; height: 192.74%; left: -3.51%;  top: -85.46%; }
